@@ -2,6 +2,12 @@
 syntax enable
 :colorscheme onehalfdark
 
+" disable bell sound and screen flash
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
 " tabs
 set tabstop=4 " number of visual spaces per TAB
 set softtabstop=4 " number of spaces in tab when editing
