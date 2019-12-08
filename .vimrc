@@ -1,4 +1,4 @@
-" general
+"no  general
 syntax enable
 :colorscheme onehalfdark
 
@@ -13,8 +13,8 @@ if has('autocmd')
 endif
 
 " ville settings
-set tabstop=4 " number of visual spaces per TAB
-set softtabstop=4 " number of spaces in tab when editing
+set tabstop=2 " number of visual spaces per TAB
+set softtabstop=2 " number of spaces in tab when editing
 set expandtab " tabs are spaces
 set number " show line numbers
 set showcmd " show command in bottom bar
@@ -25,6 +25,7 @@ set lazyredraw " redraw only when we need to
 set showmatch " highlight matching for [{()}]
 set incsearch " search as characters are entered
 set hlsearch " highlight matches
+set splitbelow
 
 " turn off search highlight with comma and space
 nnoremap <leader><space> :nohlsearch<CR>
@@ -35,8 +36,14 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 let g:ctrlp_show_hidden=1
 map <C-p> :CtrlP<CR>
 
-" nerdtree toggle
+" nerdtree
+let NERDTreeShowHidden=1 " show hidden files
+" toggle nerdtree
 map <C-o> :NERDTreeToggle<CR>
+let NERDTreeAutoDeleteBuffer = 1 " delete buffer when file is deleted
+let NERDTreeQuitOnOpen = 1 " close nerdtree when you open a file
+" open nerdtree on the current file
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
 " pathogen
 execute pathogen#infect()
