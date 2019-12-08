@@ -10,6 +10,7 @@ PLUGINS=(
   "airblade/vim-gitgutter"
   "joshdick/onedark.vim"
   "dracula/vim"
+  "fatih/vim-go"
 )
 
 mkdir -p $PLUGIN_DIR
