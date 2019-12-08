@@ -12,3 +12,4 @@ sudo ln -svf $HOME/.dotfiles/X11/xorg.conf.d/20-intel.conf /etc/X11/xorg.conf.d/
 # dotfiles
 sudo ln -svf $HOME/.dotfiles/.bashrc $HOME/.bashrc
 sudo ln -svf $HOME/.dotfiles/.vimrc $HOME/.vimrc
+sudo ln -svf $HOME/.dotfiles/.bash_aliases $HOME/.bash_aliases
