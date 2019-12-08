@@ -1,10 +1,7 @@
-"no  general
-syntax enable
-:colorscheme onehalfdark
 
-" plugins
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-" set runtimepath^=~/.vim/bundle/vim-airline/plugin/airline.vim
+" theme
+packadd! dracula
+colorscheme dracula
 
 " disable bell sound and screen flash
 set noerrorbells visualbell t_vb=
@@ -45,7 +42,13 @@ let NERDTreeQuitOnOpen = 1 " close nerdtree when you open a file
 " open nerdtree on the current file
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
-" pathogen
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+" airline
+" let g:airline_theme = 'dracula'
+let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#branch#enabled = 1
+let g:airline_left_sep = ' |  '
+let g:airline_right_sep = ''
+let g:airline_section_warning = ''
+let g:airline_section_y = ''
+let g:airline_section_x = ''
+set laststatus=2 " for airline
