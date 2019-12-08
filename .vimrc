@@ -1,7 +1,9 @@
 
-" theme
+" themes
 packadd! dracula
-colorscheme dracula
+"colorscheme dracula
+packadd! onedark.vim
+colorscheme onedark
 
 " disable bell sound and screen flash
 set noerrorbells visualbell t_vb=
@@ -15,7 +17,7 @@ set softtabstop=2 " number of spaces in tab when editing
 set expandtab " tabs are spaces
 set number " show line numbers
 set showcmd " show command in bottom bar
-set cursorline " highlight current line
+" set cursorline " highlight current line
 filetype indent on " load filetype-specific indent files
 set wildmenu " visual autocomplete for command menu
 set lazyredraw " redraw only when we need to
@@ -43,7 +45,7 @@ let NERDTreeQuitOnOpen = 1 " close nerdtree when you open a file
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
 " airline
-" let g:airline_theme = 'dracula'
+let g:airline_theme = 'onedark'
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#branch#enabled = 1
 let g:airline_left_sep = ' |  '
