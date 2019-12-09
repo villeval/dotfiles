@@ -39,6 +39,19 @@ let NERDTreeShowHidden=1 " show hidden files
 map <S-n> :NERDTreeToggle<CR>
 let NERDTreeAutoDeleteBuffer = 1 " delete buffer when file is deleted
 let NERDTreeQuitOnOpen = 1 " close nerdtree when you open a file
+let NERDTreeRespectWildIgnore=1
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "M",
+    \ "Staged"    : "S",
+    \ "Untracked" : "U",
+    \ "Renamed"   : "R",
+    \ "Unmerged"  : "=",
+    \ "Deleted"   : "D",
+    \ "Dirty"     : "Dr",
+    \ "Clean"     : "C",
+    \ 'Ignored'   : 'I',
+    \ "Unknown"   : "?"
+    \ }
 " open nerdtree on the current file
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 

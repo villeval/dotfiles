@@ -6,6 +6,7 @@ PLUGINS=(
   "kien/ctrlp.vim"
   "itchyny/lightline.vim"
   "scrooloose/nerdtree"
+  "Xuyuanp/nerdtree-git-plugin"
   "airblade/vim-gitgutter"
   "joshdick/onedark.vim"
   "dracula/vim"
