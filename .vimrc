@@ -1,7 +1,5 @@
 
 " themes
-packadd! dracula
-"colorscheme dracula
 packadd! onedark.vim
 colorscheme onedark
 
@@ -11,7 +9,7 @@ if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
-" ville settings
+" general  settings
 set tabstop=2 " number of visual spaces per TAB
 set softtabstop=2 " number of spaces in tab when editing
 set expandtab " tabs are spaces
@@ -33,24 +31,18 @@ nnoremap <leader><space> :nohlsearch<CR>
 let g:ctrlp_working_path_mode = 'r'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 let g:ctrlp_show_hidden=1
-map <C-p> :CtrlP<CR>
+map <S-m> :CtrlP<CR>
 
 " nerdtree
 let NERDTreeShowHidden=1 " show hidden files
 " toggle nerdtree
-map <C-o> :NERDTreeToggle<CR>
+map <S-n> :NERDTreeToggle<CR>
 let NERDTreeAutoDeleteBuffer = 1 " delete buffer when file is deleted
 let NERDTreeQuitOnOpen = 1 " close nerdtree when you open a file
 " open nerdtree on the current file
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
-" airline
-let g:airline_theme = 'onedark'
-let g:airline#extensions#tabline#enabled = 0
-let g:airline#extensions#branch#enabled = 1
-let g:airline_left_sep = ' |  '
-let g:airline_right_sep = ''
-let g:airline_section_warning = ''
-let g:airline_section_y = ''
-let g:airline_section_x = ''
 set laststatus=2 " for airline
+
+" integrated term
+map <S-i> :term ++rows=12<CR>
