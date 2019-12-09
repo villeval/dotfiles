@@ -55,7 +55,7 @@ let g:NERDTreeIndicatorMapCustom = {
 " open nerdtree on the current file
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
-set laststatus=2 " for airline
+set laststatus=2 " for lightline
 
 " integrated term
 map <S-i> :term ++rows=12<CR>
