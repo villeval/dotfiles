@@ -68,4 +68,5 @@ sudo apt install gnome-tweaks -y
 #sudo apt install paper-icon-theme
 
 # disable ufw bypass of docker
+# https://www.techrepublic.com/article/how-to-fix-the-docker-and-ufw-security-flaw/
 # 'sudo nano /etc/default/docker and add the following line: DOCKER_OPTS="--iptables=false"'

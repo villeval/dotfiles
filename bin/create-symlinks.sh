@@ -1,8 +1,8 @@
 # script for creating symlinks from .dotfiles-folder to original destinations
 
 # i3
-sudo ln -svf $HOME/.dotfiles/.i3/config /etc/i3/config
-sudo ln -svf $HOME/.dotfiles/.i3/i3status.conf /etc/i3status.conf
+#sudo ln -svf $HOME/.dotfiles/.i3/config /etc/i3/config
+#sudo ln -svf $HOME/.dotfiles/.i3/i3status.conf /etc/i3status.conf
 
 # etc
 sudo ln -svf $HOME/.dotfiles/inputrc /etc/inputrc
