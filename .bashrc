@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 # gradle to path
-export PATH=$PATH:/opt/gradle/gradle-5.6.1/bin
+export PATH=$PATH:/opt/gradle/gradle-6.0.1/bin
 
 # go to path
 export PATH=$PATH:/usr/local/go/bin
