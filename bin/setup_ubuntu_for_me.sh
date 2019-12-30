@@ -11,11 +11,11 @@ sudo apt install openjdk-11-jdk -y
 sudo apt install keepass2 -y
 
 # install gradle
-wget https://services.gradle.org/distributions/gradle-5.6.1-bin.zip
+wget https://services.gradle.org/distributions/gradle-6.0.1-bin.zip
 sudo mkdir /opt/gradle
-sudo unzip -d /opt/gradle gradle-5.6.1-bin.zip
-sudo bash -c 'echo "export PATH=\$PATH:/opt/gradle/gradle-5.6.1/bin" >> /home/ville/.bashrc'
-rm gradle-5.6.1-bin.zip
+sudo unzip -d /opt/gradle gradle-6.0.1-bin.zip
+#sudo bash -c 'echo "export PATH=\$PATH:/opt/gradle/gradle-6.0.1/bin" >> /home/ville/.bashrc'
+rm gradle-6.0.1-bin.zip
 
 # install ansible
 sudo apt install software-properties-common -y
