@@ -47,9 +47,9 @@ sudo apt-get install -y nodejs
 sudo apt install awscli -y
 
 # install i3 and utils
-sudo apt install i3 -y
-sudo apt-get install feh -y
-sudo apt-get install xbacklight -y
+#sudo apt install i3 -y
+#sudo apt-get install feh -y
+#sudo apt-get install xbacklight -y
 
 # install spotify
 sudo snap install spotify
@@ -64,8 +64,12 @@ sudo snap install intellij-idea-community --classic
 sudo apt install gnome-tweaks -y
 
 # install paper theme
-#sudo add-apt-repository ppa:snwh/ppa
-#sudo apt install paper-icon-theme
+sudo add-apt-repository ppa:snwh/ppa
+sudo apt install paper-icon-theme
+
+# install golang
+wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz
 
 # disable ufw bypass of docker
 # https://www.techrepublic.com/article/how-to-fix-the-docker-and-ufw-security-flaw/

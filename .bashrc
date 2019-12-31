@@ -121,3 +121,6 @@ export PATH=$PATH:/opt/gradle/gradle-6.0.1/bin
 
 # go to path
 export PATH=$PATH:/usr/local/go/bin
+
+# hugo to path
+export PATH=$PATH:$HOME/dev/tools/hugo
