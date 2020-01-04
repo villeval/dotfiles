@@ -60,9 +60,9 @@ sudo apt-get update
 sudo apt-get install code -y
 
 # install intellij idea
-wget https://download.jetbrains.com/idea/ideaIU-2019.3.1.tar.gz
-sudo tar -xzf ideaIU-2019.3.1.tar.gz -C /opt
-rm ideaIU-2019.3.1.tar.gz
+wget https://download.jetbrains.com/idea/ideaIC-2019.3.1.tar.gz
+sudo tar -xzf ideaIC-2019.3.1.tar.gz -C /opt
+rm ideaIC-2019.3.1.tar.gz
 
 # install spotify
 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
