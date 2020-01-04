@@ -5,9 +5,9 @@
 #sudo ln -svf $HOME/.dotfiles/.i3/i3status.conf /etc/i3status.conf
 
 # etc
-sudo ln -svf $HOME/.dotfiles/inputrc /etc/inputrc
-sudo ln -svf $HOME/.dotfiles/X11/xorg.conf.d/90-touchpad.conf /etc/X11/xorg.conf.d/90-touchpad.conf
-sudo ln -svf $HOME/.dotfiles/X11/xorg.conf.d/20-intel.conf /etc/X11/xorg.conf.d/20-intel.conf
+# disabled for debian 10
+#sudo ln -svf $HOME/.dotfiles/X11/xorg.conf.d/90-touchpad.conf /etc/X11/xorg.conf.d/90-touchpad.conf
+#sudo ln -svf $HOME/.dotfiles/X11/xorg.conf.d/20-intel.conf /etc/X11/xorg.conf.d/20-intel.conf
 
 # dotfiles
 sudo ln -svf $HOME/.dotfiles/.bashrc $HOME/.bashrc

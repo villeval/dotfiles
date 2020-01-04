@@ -72,11 +72,11 @@ sudo apt-get update && sudo apt-get install spotify-client -y
 # install chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb -y
+rm google-chrome-stable_current_amd64.deb
 
 # download dotfiles
 git clone https://github.com/villeval/dotfiles.git
 mv dotfiles $HOME/.dotfiles
-
 
 # todo / decide if needed
 # install paper theme
