@@ -85,4 +85,8 @@ mv dotfiles $HOME/.dotfiles
 # currently buster comes with gnome-tweaks by default
 #sudo apt install gnome-tweaks -y
 
-
+# If grub is not correctly showing background image (probably due encryption on /-partition)
+# sudo mkdir /boot/grub/images
+# sudo cp /usr/share/images/desktop-base/desktop-grub.png /boot/grub/images
+# echo GRUB_BACKGROUND="/boot/grub/images/desktop-grub.png" | sudo tee -a /etc/default/grub
+# sudo update-grub
