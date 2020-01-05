@@ -78,13 +78,6 @@ rm google-chrome-stable_current_amd64.deb
 git clone https://github.com/villeval/dotfiles.git
 mv dotfiles $HOME/.dotfiles
 
-# todo / decide if needed
-# install paper theme
-
-# install gnome tweaks tool
-# currently buster comes with gnome-tweaks by default
-#sudo apt install gnome-tweaks -y
-
 # If grub is not correctly showing background image (probably due encryption on /-partition)
 # sudo mkdir /boot/grub/images
 # sudo cp /usr/share/images/desktop-base/desktop-grub.png /boot/grub/images
