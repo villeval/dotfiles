@@ -38,6 +38,7 @@ sudo add-apt-repository \
    stable"
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+sudo usermod -aG docker $USER
 
 # install node.js
 curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
