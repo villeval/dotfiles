@@ -11,10 +11,10 @@ sudo apt install openjdk-11-jdk -y
 sudo apt install keepassxc -y
 
 # install gradle
-wget https://services.gradle.org/distributions/gradle-6.0.1-bin.zip
+wget https://services.gradle.org/distributions/gradle-6.4.1-bin.zip
 sudo mkdir /opt/gradle
-sudo unzip -d /opt/gradle gradle-6.0.1-bin.zip
-rm gradle-6.0.1-bin.zip
+sudo unzip -d /opt/gradle gradle-6.4.1-bin.zip
+rm gradle-6.4.1-bin.zip
 
 # install ansible
 echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
@@ -78,6 +78,9 @@ rm google-chrome-stable_current_amd64.deb
 # download dotfiles
 git clone https://github.com/villeval/dotfiles.git
 mv dotfiles $HOME/.dotfiles
+
+# install serverless framework
+curl -o- -L https://slss.io/install | bash
 
 # If grub is not correctly showing background image (probably due encryption on /-partition)
 # sudo mkdir /boot/grub/images

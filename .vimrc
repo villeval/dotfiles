@@ -62,3 +62,6 @@ map <S-i> :term ++rows=12<CR>
 
 " golang
 au filetype go inoremap <buffer> . .<C-x><C-o>
+" call plug#begin()
+" Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+" call plug#end()

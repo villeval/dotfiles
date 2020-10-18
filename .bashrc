@@ -113,10 +113,13 @@ if ! shopt -oq posix; then
 fi
 
 # gradle to path
-export PATH=$PATH:/opt/gradle/gradle-6.0.1/bin
+export PATH=$PATH:/opt/gradle/gradle-6.4.1/bin
 
 # go to path
 export PATH=$PATH:/usr/local/go/bin
 
 # hugo to path
 export PATH=$PATH:$HOME/dev/tools/hugo
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
