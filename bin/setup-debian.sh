@@ -79,9 +79,6 @@ rm google-chrome-stable_current_amd64.deb
 git clone https://github.com/villeval/dotfiles.git
 mv dotfiles $HOME/.dotfiles
 
-# install serverless framework
-curl -o- -L https://slss.io/install | bash
-
 # If grub is not correctly showing background image (probably due encryption on /-partition)
 # sudo mkdir /boot/grub/images
 # sudo cp /usr/share/images/desktop-base/desktop-grub.png /boot/grub/images

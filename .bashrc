@@ -121,5 +121,3 @@ export PATH=$PATH:/usr/local/go/bin
 # hugo to path
 export PATH=$PATH:$HOME/dev/tools/hugo
 
-# Added by serverless binary installer
-export PATH="$HOME/.serverless/bin:$PATH"
